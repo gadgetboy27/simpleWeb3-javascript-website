@@ -1,11 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
-/*
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-/* Basic */
+
 @-ms-viewport {
   width: device-width; }
 body {
@@ -2791,7 +2786,7 @@ body {
     right: 0;
     text-align: right;
     top: 0;
-    vertical-align: middle;
+    display: block;
     width: 7rem; }
     #menu .close:before {
       -moz-osx-font-smoothing: grayscale;
