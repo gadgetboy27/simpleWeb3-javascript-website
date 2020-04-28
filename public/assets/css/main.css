@@ -1806,7 +1806,7 @@ ul.icons {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: url("../../images/banner.jpg");
+  background-image: url("../../images/germ_icon.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2013,7 +2013,7 @@ ul.icons {
     opacity: 0.6;
     position: absolute;
     top: 0;
-    webkit-linear-gradientidth: 100%;
+    webkit-linear-gradient: 100%;
     width: 100%;
     z-index: 1; }
   #banner.small {
