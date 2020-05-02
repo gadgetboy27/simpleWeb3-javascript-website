@@ -264,49 +264,54 @@
 											</div>
 									
 										<!-- Form -->
-										
-										<form name="contact" method="POST" data-netlify-recaptcha="true"action="">
-											<h3>Send us a comment</h3>
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="name" id="name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="tel" name="phone" id="phone" value="" placeholder="Phone" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="email" id="email" value="" placeholder="Email" />
-												</div>
-												<!-- Break -->
-												<div class="col-6">
-													<select name="category" id="category">
-														<option value="select">- Select -</option>
-														<option value="small">Small</option>
-														<option value="medium">Medium</option>
-														<option value="Large">Large</option>
-														<option value="wide">Wide</option>
-														<option value="wider">Wider</option>
-														<option value="widest">Widest</option>
-														<option value="custom">Germicide Lamps</option>
-												<!--	<option value="theta">Shipping</option> -->												</select>
-												</div>
-												<div class="data-netlify-recaptcha"></div>
-												<!--<div class="col-4 col-12-small">
-													<input type="radio" id="radio-alpha" name="radio" checked>
-													<label for="shipping">Include Shipping</label>
-												</div> -->
-												
-												<div class="col-12">
-													<textarea name="textarea" id="textarea" placeholder="Message us" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Submit Form" class="primary" /></li>
-														<li><input type="reset" value="Reset" /></li>
-													</ul>
-												</div>
+										<div class="col-6 col-12-medium">
+												<form action="" name="contact" method="POST" 
+												data-netlify-recaptcha="true" data-netlify="true" netlify-honeypot="bot-field">
+													<p style="visibility: hidden">
+														<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+														</p>
+														<h3>Send Us Your Order</h3>
+													<div class="row gtr-uniform">
+														<div class="col-6 col-12-xsmall">
+															<input type="text" name="name" id="name" value="" placeholder="Name" />
+														</div>
+														<div class="col-6 col-12-xsmall">
+															<input type="tel" name="phone" id="phone" value="" placeholder="Phone" />
+														</div>
+														<div class="col-6 col-12-xsmall">
+															<input type="email" name="email" id="email" value="" placeholder="Email" />
+														</div>
+														<!-- Break -->
+														<div class="col-6">
+															<select name="category" id="category">
+																<option value="select">- Select -</option>
+																<option value="small">Small</option>
+																<option value="medium">Medium</option>
+																<option value="Large">Large</option>
+																<option value="wide">Wide</option>
+																<option value="wider">Wider</option>
+																<option value="widest">Widest</option>
+																<option value="custom">UV Lamps</option>
+														<!--	<option value="theta">Shipping</option> -->												</select>
+														</div>
+														<!--<div class="col-4 col-12-small">
+															<input type="radio" id="radio-alpha" name="radio" checked>
+															<label for="shipping">Include Shipping</label>
+														</div> -->
+														
+														<div class="col-12">
+															<textarea name="textarea" id="textarea" placeholder="Message us" rows="6"></textarea>
+														</div>
+														<div data-netlify-recaptcha="true"></div> 
+														<div class="col-12">
+															<ul class="actions">
+																<li><input type="submit" value="Submit Form" class="primary" /></li>
+																<li><input type="reset" value="Reset" /></li>
+															</ul>
+														</div>
+													</div>
+												</form>
 											</div>
-										</form>
 									</div>
 								</div>
 					</div>
