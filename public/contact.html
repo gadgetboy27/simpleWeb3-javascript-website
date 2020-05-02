@@ -24,7 +24,7 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="products.html">Products</a></li>
 					<li><a href="about.html">About</a></li>
-				<!--<li><a href="contact.html">Contact Us</a></li>-->
+					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
 			</nav>
 
@@ -189,7 +189,10 @@
 								
 									<!-- Form -->
 									<h3>Form</h3>
-									<form name="contact" method="POST" data-netlify-recaptcha="true" action="./pages/success">
+									<form action="" name="contact" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+										<p style="visibility: hidden">
+												<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+											</p>
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
 												<input type="text" name="name" id="name" value="" placeholder="Name" />
@@ -213,7 +216,7 @@
 													<option value="custom">Custom</option>
 											<!--	<option value="theta">Shipping</option> -->												</select>
 											</div>
-											
+											<div data-netlify-recaptcha="true"></div>
 											<!--<div class="col-4 col-12-small">
 												<input type="radio" id="radio-alpha" name="radio" checked>
 												<label for="shipping">Include Shipping</label>
