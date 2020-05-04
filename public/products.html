@@ -1,18 +1,20 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>GermTech LTD</title>
+		<title>GermTech Our Products</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/css/modal.css" />
+
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="index.html">GermTECH Products</a>
+				<a class="logo" href="index.html">GermTECH Our Products</a>
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>
@@ -22,7 +24,6 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-				<!--<li><a href="products.html">Products</a></li>-->
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
@@ -52,7 +53,26 @@
 									
 									<div class="author">
 										<div class="image">
-											<img src="images/600x900-top.jpg" alt="sneeze gaurd" />
+											 <!--Modal starts here-->
+											 <img id="modalBtn" src="images/600x900-top.jpg" class="imgBtn" />
+												<div id="prod-modal" class="modal" >
+													<div class="modal-content">
+														<div class="modal-header">
+														  <span class="closeBtn">&times;</span>
+														  <h2>GERMTECH</h2>
+														</div>
+														
+														  <div class="modal-body">
+															<p>Screen coverage 600mm wide x 900mm high</p>
+															<img src="images/600x900-top.jpg" class="modalImg" alt="small screen" />
+															<p></p>
+														  </div>
+														  <div class="modal-footer">
+															<h3>Order Today</h3>
+														  </div>
+														</div>
+													  </div>
+													 
 										</div>
 										<p class="credit">- <strong>$493.10</strong> <span>CEO - ABC Inc.</span></p>
 									</div>
@@ -284,7 +304,7 @@
 														<!-- Break -->
 														<div class="col-6">
 															<select name="category" id="category">
-																<option value="select">- Select -</option>
+																<option value="select">- Select Product-</option>
 																<option value="small">Small</option>
 																<option value="medium">Medium</option>
 																<option value="Large">Large</option>
@@ -452,11 +472,11 @@
 			</footer>
 
 		<!-- Scripts -->
-			
 			<script src="./assets/js/jquery.min.js"></script>
 			<script src="./assets/js/browser.min.js"></script>
 			<script src="./assets/js/breakpoints.min.js"></script>
 			<script src="./assets/js/util.js"></script>
 			<script src="./assets/js/main.js"></script>
+			<script src="./assets/js/modal.js"></script>
 	</body>
 </html>
