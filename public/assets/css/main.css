@@ -863,7 +863,6 @@ table.alt tbody tr td {
         .testimonials .content .author .image img {
           border-radius: 100%;
           max-width: 100%; 
-          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
         }
     .testimonials .content .credit {
       font-size: 1rem; }
