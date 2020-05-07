@@ -60,10 +60,10 @@
 								<script>
 								function myMap() {
 									const mapProp = {
-										center:new google.maps.LatLng(51.50872,-0.120850),
+										center:{lat:51.50872, lng:-0.120850},
 										zoom:5,
-									};
-									const map = new google.maps.Map(document.getElementById('googleMap'),mapProp);
+									}
+									const map = new google.maps.Map(document.getElementById('googleMap'), mapProp)
 								}
 								</script>-->
 								<div class="col-6 col-12-medium">
@@ -86,7 +86,7 @@
 										<!-- Break -->
 										<div class="col-6">
 											<select name="category" id="category">
-												<option value="select">- Select -</option>
+												<option value="select">- Select Product-</option>
 												<option value="small">Small</option>
 												<option value="medium">Medium</option>
 												<option value="Large">Large</option>
