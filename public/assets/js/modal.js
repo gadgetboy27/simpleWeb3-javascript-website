@@ -1,10 +1,12 @@
 // Get DOM Elements
 const modal = document.querySelector('#prod-modal')
-const modalBtn = document.querySelector('#modalBtn')
+const modalBtn = document.querySelectorAll('#modalBtn')
 const closeBtn = document.getElementsByClassName('closeBtn')[0]
 
-// Events
-modalBtn.addEventListener('click', openModal)
+// Events with loop to open multiple modal
+for (i = 0; i < modalBtn.length; i++) {
+modalBtn[i].addEventListener('click', openModal)
+}
 closeBtn.addEventListener('click', closeModal)
 window.addEventListener('click', outsideClick)
 
@@ -24,3 +26,5 @@ function outsideClick(e) {
     modal.style.display = 'none'
   }
 }
+
+console.log(modalBtn)
