@@ -1,30 +1,37 @@
 // Get DOM Elements
-const modal = document.querySelector('#prod-modal')
-const modalBtn = document.querySelectorAll('#modalBtn')
-const closeBtn = document.getElementsByClassName('closeBtn')[0]
+const modalBtn = document.querySelectorAll('[data-modal-target]')
+const modal = document.querySelectorAll('.modal')
+const closeBtn = document.querySelectorAll('.closeBtn')
 
-// Events with loop to open multiple modal
-for (i = 0; i < modalBtn.length; i++) {
-modalBtn[i].addEventListener('click', openModal)
-}
-closeBtn.addEventListener('click', closeModal)
-window.addEventListener('click', outsideClick)
+// Modal click Events
+modalBtn.forEach(el => {
+  el.addEventListener('click', event => toggleModal(event.currentTarget.getAttribute('data-modal-target')))
+})
+   
+closeBtn.forEach(el => {
+  el.addEventListener('click', event => toggleModal(event.currentTarget.closest('.modal').id))
+})
 
-// Open
-function openModal() {
-  modal.style.display = 'block'
-}
+modal.forEach(el => {
+  el.addEventListener('click', event => {
+    if(event.currentTarget===event.target) toggleModal(event.currentTarget.id)
+  })
+})
 
-// Close
-function closeModal() {
-  modal.style.display = 'none'
-}
+function toggleModal(modalId) {
+  const modal = document.getElementById(modalId)
 
-// Close If Outside Click
-function outsideClick(e) {
-  if (e.target == modal) {
-    modal.style.display = 'none'
+  if(getComputedStyle(modal).display === 'flex') {
+    modal.classList.add('modal-hide')
+    setTimeout(() => {
+      modal.style.display = 'none'
+      modal.classList.remove('modal-show', 'modal-hide')
+      document.body.style.overflow = 'initial'
+    }, 200)
+  }
+  else {
+    modal.style.display = 'flex'
+    modal.classList.add('modal-show')
+    document.body.style.overflow = 'hidden'
   }
 }
-
-console.log(modalBtn)
