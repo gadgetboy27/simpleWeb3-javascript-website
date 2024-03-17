@@ -1,1 +1,1 @@
-# germtech-website
+# simple Stripe-javascript-website

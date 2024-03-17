@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Crypto Onramp</title>
+    <meta name="description" content="A demo of hosted onramp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://crypto-js.stripe.com/crypto-onramp-outer.js"></script>
+    
+  </head>
+  <body>
+    <div id="onramp-element"></div>
+    <script type="module">
+        import { initializeOnramp } from '/onramp.js';
+    
+        document.addEventListener('DOMContentLoaded', initializeOnramp);
+      </script>
+  </body>
+</html>
